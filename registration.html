@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Home</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<title>Registration</title>
 		<meta charset="utf-8">
 		<meta name = "format-detection" content = "telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
@@ -61,31 +56,14 @@
 <!--==============================header=================================-->
 			<header>
 				<div class="menu_block ">
-				<div class="butn" >
-				<div class="topcorner">
-									<a href="login.html" >Sign In</a> &nbsp
-									<a href="registration.html" >Sign Up</a></div></div>
 					<div class="container_12">
 						<div class="grid_12">
 							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 								<ul class="sf-menu">
-									<li class="current"><a href="index.html">Home</a></li>
-<<<<<<< HEAD
-									<li><a href="index-1.html">Login</a></li>
-									<li><a href="index-2.html">Cars</a></li>
-									<li><a href="index-3.html">Services</a></li>
-									<li><a href="index-4.html">Contacts</a></li>
-=======
-									<li><a href="post truck.html">Post Truck</a></li>
-									<li><a href="search truck.html">Search Truck</a></li>
-									<li><a href="post cargo.html">Post Cargo</a></li>
-									<li><a href="search cargo">Search Cargo</a></li> 
-								
->>>>>>> ff5a1fc2b774cac39abe053445121087817f83c7
+									<li class="current"><a href="index.html">Registration</a></li>
+									
 								</ul>
-						
 							</nav>
-							  
 							<div class="clear"></div>
 						</div>
 						<div class="clear"></div>
@@ -163,75 +141,97 @@
 					<div class="clear"></div>
 				</div>
 			</div>
-
 <!--==============================Content=================================-->
-
 			<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - April 07, 2014!</div>
 				<div class="container_12">
 					<div class="grid_5">
-						<h3>Booking Form</h3>
+						<h3>Registration Form</h3>
 						<form id="bookingForm">
 							<div class="fl1">
 								<div class="tmInput">
-									<input name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+									<input name="Fname" placeHolder="First Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
 								</div>
 								<div class="tmInput">
-									<input name="From" placeHolder="From:" type="text" data-constraints="@NotEmpty @Required ">
+									<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
 								</div>
 							</div>
 							<div class="fl1">
 								<div class="tmInput">
-									<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+									<input name="Lname" placeHolder="Last Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
 								</div>
 								<div class="tmInput mr0">
-									<input name="To" placeHolder="To:" type="text" data-constraints="@NotEmpty @Required">
+									<input name="pwd" placeHolder="Password:" type="password" data-constraints="@NotEmpty @Required">
 								</div>
 							</div>
 							<div class="clear"></div>
-							<strong>Time</strong>
-							<div class="tmInput">
-								<input name="Time" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							<div class="tmRadio">
+								<p>Gender</p>
+								<input name="Gender" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Gender", groups=[RadioGroup])' checked/>
+								<span>Male</span>
+								<input name="Gender" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Gender", groups=[RadioGroup])' />
+								<span>Female</span>
 							</div>
-							<div class="clear"></div>
-							<strong>Date</strong>
-							<label class="tmDatepicker">
-								<input type="text" name="Date"	placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
-							</label>
+							
 							<div class="clear"></div>
 							<div class="tmRadio">
-								<p>Comfort</p>
-								<input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
-								<span>Cheap</span>
-								<input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-								<span>Standart</span>
-								<input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-								<span>Lux</span>
+								<p>I am a</p>
+								<input name="Type" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Type", groups=[RadioGroup])' checked/>
+								<span>Trucker</span>
+								<input name="Type" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Type", groups=[RadioGroup])' />
+								<span>Shipper</span>
+								<input name="Type" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Type", groups=[RadioGroup])' />
+								<span>Both</span>
 							</div>
 							<div class="clear"></div>
 							<div class="fl1 fl2">
-								<em>Adults</em>
-								<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<option>1</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
+								<em>Country</em>
+								<select name="country" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+									<option>America </option>
+									<option>America</option>
+									<option>India</option>
+									<option>China</option>
 								</select>
-								<div class="clear height1"></div>
+								<!---<div class="clear height1"></div>--->
 							</div>
-							<div class="fl1 fl2">
-								<em>Children</em>
-								<select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<option>0</option>
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-								</select>
-							</div>
+							
 							<div class="clear"></div>
-							<div class="tmTextarea">
-								<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+							<div class="fl1 fl2">
+								<em>State</em>
+								<select name="State" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+									<option>LA</option>
+									<option>LA</option>
+									<option>New York</option>
+									<option>Jersey</option>
+								</select>
+								<!---<div class="clear height1"></div>--->
 							</div>
-							<a href="#" class="btn" data-type="submit">Submit</a>
+							
+							
+							
+							<div class="clear"></div>
+							<div class="fl1 fl2">
+							<div class="tmInput">
+									<input name="mobile" placeHolder="Phone No:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+								</div>
+								</div>
+								<br><br>
+<!--<img src="captcha_code_file.php?rand=<?php echo rand(); ?>"
+id="captchaimg" >-->
+<div class="clear"></div>
+<div class="fl1 fl2">
+<img src="images/1.bmp" id="captchaimg" ><!--<div> <input type=button onClick=reload(); value='Reload image'></div>-->
+<br>
+<div class="tmInput">
+<input name="6 letters code" placeHolder="Enter the above code here" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+</div>
+</div>
+<br>
+							<div class="clear"></div>
+							&nbsp &nbsp <a href="#" class="btn" data-type="submit">Submit</a>
+							 <center>
+								<p>By clicking on Submit , you accept the terms & conditions of the
+								User Agreement</p>
+							</center>
 						</form>
 					</div>
 					<div class="grid_6 prefix_1">
@@ -247,7 +247,7 @@
 		<footer>
 			<div class="container_12">
 				<div class="grid_12">
-					<div class="f_phone"><span>Contact Us:</span> + 9999 999 9999</div>
+					<div class="f_phone"><span>Call Us:</span> + 1800 559 6580</div>
 					<div class="socials">
 						<a href="#" class="fa fa-twitter"></a>
 						<a href="#" class="fa fa-facebook"></a>
@@ -255,14 +255,13 @@
 					</div>
 					<div class="copy">
 						<div class="st1">
-						<div class="brand">Your<span class="color1">L</span>ogo </div>
-						&copy; 2015	| <a href="#">Privacy Policy</a> </div> <a href="index-1.html">About Us</a> | <a href="#">Terms of Services</a> | <a href="#">FAQ</a>
+						<div class="brand">Tour<span class="color1">T</span>axi </div>
+						&copy; 2015	| <a href="#">Privacy Policy</a> </div> Website designed by Abhishek & Arun
 					</div>
 				</div>
 				<div class="clear"></div>
 			</div>
 		</footer>
-		<!-- Scripts -->
 		<script>
 			$(function (){
 				$('#bookingForm').bookingForm({

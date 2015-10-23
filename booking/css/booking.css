@@ -126,6 +126,14 @@ textarea::-moz-placeholder
 }
 #bookingForm a.btn:hover {
 }
+.butn
+{
+	position: relative;
+  display: block;
+  padding-top: 5px;
+  color: "white";
+  font: 14px/20px 'Open Sans', sans-serif;
+}
 .controlHolder {
   position: relative;
   margin-bottom: 13px;
@@ -523,3 +531,8 @@ button.ui-state-default:hover {
   background-color: transparent;
   border: 0;
 }
+.topcorner{
+position:absolute;
+   top:0;
+   right:0;
+  }
