@@ -5,6 +5,7 @@
 /* Control Holder */
 
 #bookingForm {
+  padding-right: 36px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -21,7 +22,8 @@
 }
 
 .fl1 {
-  width: 300px;
+  width: 193px;
+  float: left;
 }
 
 .fl1.fl2 {
@@ -203,7 +205,7 @@ textarea::-moz-placeholder
   color: #737272;
   background: #f0f3f5;
   font: 14px/20px 'Open Sans', sans-serif;
-  width: 95px;
+   width: 95px;
   height: 30px;
   float: right;
   -webkit-box-sizing: border-box;
@@ -536,3 +538,19 @@ position:absolute;
    top:0;
    right:0;
   }
+  
+  .cd-side-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+.cd-side-nav.nav-is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s 0s, visibility 0s 0s;
+}
+
