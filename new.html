@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Registration</title>
+		<title>Cars</title>
 		<meta charset="utf-8">
 		<meta name = "format-detection" content = "telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="shortcut icon" href="images/favicon.ico" />
-		<link rel="stylesheet" href="booking/css/booking.css">
-		<link rel="stylesheet" href="css/camera.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/touchTouch.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-migrate-1.2.1.js"></script>
@@ -18,53 +16,46 @@
 		<script src="js/jquery.equalheights.js"></script>
 		<script src="js/jquery.mobilemenu.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/owl.carousel.js"></script>
-		<script src="js/camera.js"></script>
-		<!--[if (gt IE 9)|!(IE)]><!-->
-		<script src="js/jquery.mobile.customized.min.js"></script>
-		<!--<![endif]-->
-		<script src="booking/js/booking.js"></script>
+		<script src="js/touchTouch.jquery.js"></script>
 		<script>
 			$(document).ready(function(){
-				jQuery('#camera_wrap').camera({
-					loader: false,
-					pagination: false ,
-					minHeight: '444',
-					thumbnails: false,
-					height: '28.28125%',
-					caption: true,
-					navigation: true,
-					fx: 'mosaic'
-				});
 				$().UItoTop({ easingType: 'easeOutQuart' });
+				$('.gallery a.gal').touchTouch();
 			});
 		</script>
+		<script src="booking/js/booking.js"></script>
+		<link rel="stylesheet" href="booking/css/booking.css">
 		<!--[if lt IE 8]>
 			<div style=' clear: both; text-align:center; position: relative;'>
 				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
 					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
 				</a>
 			</div>
-			<![endif]-->
+		<![endif]-->
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv.js"></script>
 			<link rel="stylesheet" media="screen" href="css/ie.css">
 		<![endif]-->
 	</head>
-	<body class="page1" id="top">
+	<body class="" id="top">
 		<div class="main">
 <!--==============================header=================================-->
 			<header>
 				<div class="menu_block ">
+					<div class="butn" >
+				<div class="topcorner">
+									<a href="login.html" >Sign In</a> &nbsp
+									<a href="registration.html" >Sign Up</a></div></div>
 					<div class="container_12">
 						<div class="grid_12">
 							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 								<ul class="sf-menu">
 									<li class="current"><a href="index.html">Home</a></li>
-									<li><a href="index-1.html">About</a></li>
-									<li><a href="index-2.html">Cars</a></li>
-									<li><a href="index-3.html">Services</a></li>
-									<li><a href="index-4.html">Contacts</a></li>
+									<li><a href="post truck.html">Post Truck</a></li>
+									<li><a href="search truck.html">Search Truck</a></li>
+									<li><a href="post cargo.html">Post Cargo</a></li>
+									<li><a href="search cargo">Search Cargo</a></li> 
+								
 								</ul>
 							</nav>
 							<div class="clear"></div>
@@ -83,172 +74,131 @@
 				</div>
 				<div class="clear"></div>
 			</header>
-			<div class="slider_wrapper ">
-				<div id="camera_wrap" class="">
-					<div data-src="images/slide.jpg" ></div>
-					<div data-src="images/slide1.jpg" ></div>
-					<div data-src="images/slide2.jpg"></div>
-				</div>
-			</div>
-			<div class="container_12">
-				<div class="grid_4">
-					<div class="banner">
-						<div class="maxheight">
-							<div class="banner_title">
-								<img src="images/icon1.png" alt="">
-								<div class="extra_wrapper">Fast&amp;
-									<div class="color1">Safe</div>
-								</div>
-							</div>
-							Dorem ipsum dolor sit amet, consectetur adipiscinger elit. In mollis erat mattis neque facilisis, sit ameter ultricies erat rutrum. Cras facilisis, nulla vel viver auctor, leo magna sodales felis, quis malesuad
-							<a href="#" class="fa fa-share-square"></a>
-						</div>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="banner">
-						<div class="maxheight">
-							<div class="banner_title">
-								<img src="images/icon2.png" alt="">
-								<div class="extra_wrapper">Best
-									<div class="color1">Prices</div>
-								</div>
-							</div>
-							Hem ipsum dolor sit amet, consectetur adipiscinger elit. In mollis erat mattis neque facilisis, sit ameter ultricies erat rutrum. Cras facilisis, nulla vel viver auctor, leo magna sodales felis, quis malesuader
-							<a href="#" class="fa fa-share-square"></a>
-						</div>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="banner">
-						<div class="maxheight">
-							<div class="banner_title">
-								<img src="images/icon3.png" alt="">
-								<div class="extra_wrapper">Package
-									<div class="color1">Delivery</div>
-								</div>
-							</div>
-							Kurem ipsum dolor sit amet, consectetur adipiscinger elit. In mollis erat mattis neque facilisis, sit ameter ultricies erat rutrum. Cras facilisis, nulla vel viver auctor, leo magna sodales felis, quis malesuki
-							<a href="#" class="fa fa-share-square"></a>
-						</div>
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="c_phone">
-				<div class="container_12">
-					<div class="grid_12">
-						<div class="fa fa-phone"></div>+ 1800 559 6580
-						<span>ORDER NOW!</span>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
 <!--==============================Content=================================-->
-			<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - April 07, 2014!</div>
-				<div class="container_12">
-					<div class="grid_5">
-						<h3>Registration Form</h3>
-						<form id="bookingForm">
-							<div class="fl1">
-								<div class="tmInput">
-									<input name="Fname" placeHolder="First Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
-								</div>
-								<div class="tmInput">
-									<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
-								</div>
-							</div>
-							<div class="fl1">
-								<div class="tmInput">
-									<input name="Lname" placeHolder="Last Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
-								</div>
-								<div class="tmInput mr0">
-									<input name="pwd" placeHolder="Password:" type="password" data-constraints="@NotEmpty @Required">
-								</div>
-							</div>
-							<div class="clear"></div>
-							<div class="fl1 f12">
-								<em>Gender</em>
-								<select name="Gender" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<option>Male</option>
-									<option>Male</option>
-									<option>Female</option>
-								</select>
-								<!---<div class="clear height1"></div>-->
-							</div>
-							
-							<div class="clear"></div>
-							<div class="fl1 fl2">
-								<em>I am a</em>
-								<select name="type" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<option>Trucker </option>
-									<option>Trucker</option>
-									<option>Shipper</option>
-									<option>Both</option>
-								</select>
-								<!---<div class="clear height1"></div>--->
-							</div>
-							<div class="clear"></div>
-							<div class="fl1 fl2">
-								<em>Country</em>
-								<select name="country" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<option>America </option>
-									<option>America</option>
-									<option>India</option>
-									<option>China</option>
-								</select>
-								<!---<div class="clear height1"></div>--->
-							</div>
-							
-							<div class="clear"></div>
-							<div class="fl1 fl2">
-								<em>State</em>
-								<select name="State" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<option>LA</option>
-									<option>LA</option>
-									<option>New York</option>
-									<option>Jersey</option>
-								</select>
-								<!---<div class="clear height1"></div>--->
-							</div>
-							
-							
-							
-							<div class="clear"></div>
-							<div class="fl1 fl2">
-							<div class="tmInput">
-									<input name="mobile" placeHolder="Phone No:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
-								</div>
-								</div>
-								<br><br>
-<!--<img src="captcha_code_file.php?rand=<?php echo rand(); ?>"
-id="captchaimg" >-->
-<div class="clear"></div>
-<div class="fl1 fl2">
-<img src="1.bmp" id="captchaimg" ><!--<div> <input type=button onClick=reload(); value='Reload image'></div>-->
-<br>
-<div class="tmInput">
-<input name="6 letters code" placeHolder="Enter the above code here" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
-</div>
-</div>
-<br>
-							<div class="clear"></div>
-							&nbsp &nbsp <a href="#" class="btn" data-type="submit">Submit</a>
-							 <center>
-								<p>By clicking on Submit , you accept the terms & conditions of the
-								User Agreement</p>
-							</center>
-						</form>
-					</div>
-					<div class="grid_6 prefix_1">
-						<a href="index2.html" class="type"><img src="images/page1_img1.jpg" alt=""><span class="type_caption">Economy</span></a>
-						<a href="index2.html" class="type"><img src="images/page1_img2.jpg" alt=""><span class="type_caption">Standard</span></a>
-						<a href="index2.html" class="type"><img src="images/page1_img3.jpg" alt=""><span class="type_caption">Lux</span></a>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
+<div id="cphContent_pnlSearchFilters" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cphContent_btnSearch&#39;)">
+		<form id="bookingForm">
+                                    <pre id="some">&emsp;                           Material:                            TruckType:                            PostedBy:</pre>     
+                                    <center>
+                                    <select class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+			<option selected="selected" value="Select">Select</option>
+			<option value="45">Bardana jute/plastic</option>
+			<option value="18">Building Materials</option>
+			<option value="4">Chemicals</option>
+			<option value="16">Coal And Ash</option>
+			<option value="6">Container</option>
+			<option value="5">Electronics/Consumer Durables</option>
+			<option value="7">Fertilizers</option>
+			<option value="10">Fruits And Vegetables</option>
+			<option value="11">Furniture And Wood Products</option>
+			<option value="12">House Hold Goods</option>
+			<option value="13">Industrial Equipments</option>
+			<option value="24">Liquids in drums</option>
+			<option value="15">Liquids/Oil</option>
+			<option value="26">Machinery new/ Machinery old/Tools/Spares</option>
+			<option value="25">Medicines/Medical material</option>
+			<option value="46">Metals</option>
+			<option value="17">Metals/Iron sheets/bars/scrap/others</option>
+			<option value="27">Mill Jute Oil</option>
+			<option value="21">Others / General</option>
+			<option value="9">Packed Food</option>
+			<option value="23">Plastic Pipes/Plastic products</option>
+			<option value="29">Powder/powder bags/others</option>
+			<option value="22">Printed books/Paper rolls</option>
+			<option value="8">Refrigerated Goods</option>
+			<option value="1">Rice products/Agriculture Products</option>
+			<option value="14">Scrap</option>
+			<option value="31">Spices</option>
+			<option value="19">Textiles</option>
+			<option value="20">Tyres And Rubber Products</option>
+			<option value="2">Vehicles/Automobiles/Auto Parts</option>
+
+		</select>
+
+                                    <select class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+			<option selected="selected" value="Select">Select</option>
+			<option value="2">10 Axle Trailer</option>
+			<option value="11">Canters (14 -17 feet)</option>
+			<option value="34">Canters (19 Feet)</option>
+			<option value="35">Canters (9-13 Feet)</option>
+			<option value="42">Car Carrier (close body)</option>
+			<option value="9">Car Carriers(Open Body)</option>
+			<option value="38">Cargo Carriers</option>
+			<option value="20">Cement Bulker</option>
+			<option value="21">Concrete Mixer</option>
+			<option value="33">Container Close Body (20-40) Feet</option>
+			<option value="41">Container Close Body (32-36) Feet</option>
+			<option value="29">Container Fixed (40-70 Feet)</option>
+			<option value="15">Container Trucks</option>
+			<option value="23">Containers open body (20-40 feet)</option>
+			<option value="30">Dala Body</option>
+			<option value="37">DCM Canter/ Tata Mazda</option>
+			<option value="26">Double Dacker</option>
+			<option value="14">Flat Bed</option>
+			<option value="6">Flat Bed Trailers (20-32 Feet)</option>
+			<option value="5">Flat Bed Trailers (40-54 Feet)</option>
+			<option value="17">HCV (Trucks/Trailers)</option>
+			<option value="7">Hydraulic Trailers</option>
+			<option value="36">Jumbo Canter</option>
+			<option value="18">LCV (Light Commercial Vehicle)</option>
+			<option value="3">Low Bed Trailer</option>
+			<option value="8">Multi Axle Trailer</option>
+			<option value="13">ODC (Over Dimensional Cargo)</option>
+			<option value="28">Open Body Truck</option>
+			<option value="25">Refrigerated Trucks/A C. Containers</option>
+			<option value="24">Scooter Body Trucks</option>
+			<option value="4">Semi Low Bed Trailer</option>
+			<option value="44">Tanker Truck (12 Wheel)</option>
+			<option value="45">Tanker Truck (14 Wheel)</option>
+			<option value="39">Tankers Trucks (10 wheel)</option>
+			<option value="16">Tankers Trucks (6 wheel)</option>
+			<option value="12">Tempoo / Tata 407 (4 wheel)</option>
+			<option value="19">Tipper Dumper</option>
+			<option value="10">Trailer Trucks</option>
+			<option value="1">Truck (6 wheel)</option>
+			<option value="27">Truck 10 wheel (22 Feet )</option>
+			<option value="46">Truck 10-12 Wheel (22 Feet)</option>
+			<option value="40">Truck 12 wheel (22 Feet)</option>
+			<option value="43">Truck 12 Wheel (25 feet)</option>
+			<option value="31">Truck 14 wheel</option>
+			<option value="32">Truck 16 wheel</option>
+			<option value="22">Vehicle/Car Carrier (20 TO 80 FEET) Closed</option>
+
+		</select>
+                                    <select class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
+			<option selected="selected" value="Select">Select</option>
+			<option value="2">Transporter</option>
+			<option value="4">Customer</option>
+			<option value="5">Packers And Movers</option>
+
+		</select><br></center>
+                                   <div id="something">	<pre id="some">&emsp;                          Post-Id:                   Source City              Destination City:         Scheduled Date:</pre> </div>
+                                   	<center>
+                                    <input name="ctl00$cphContent$txtPostedId" type="text" id="cphContent_txtPostedId" class="form-control" Placeholder="Ex-TSPL0023" />
+                                    <span id="cvPostingId" style="color: red; display: none;">Invalid posting id.</span>
+          
+                        
+                                    <input name="ctl00$cphContent$txtFromCity" type="text" id="cphContent_txtFromCity" placeholder="Source City" class="form-control" />
+                                    <input type="hidden" name="ctl00$cphContent$hfldFromCityId" id="cphContent_hfldFromCityId" />
+                                    <span id="cvFromCity" style="color: red; display: none;">Invalid city.</span>
+                                
+                                    
+                                    <input name="ctl00$cphContent$txtToCity" type="text" id="cphContent_txtToCity" placeholder="Destination City" class="form-control" />
+                                    <input type="hidden" name="ctl00$cphContent$hfldToCityId" id="cphContent_hfldToCityId" />
+                                    <span id="cvToCity" style="color: red; display: none;">Invalid city.</span>
+                                
+                                    
+                                        <input name="ctl00$cphContent$txtDate" type="text" maxlength="10" id="cphContent_txtDate" class="form-control" readonly="readonly" />
+                                        <span class="input-group-btn">
+                                            <button id="datePicker" class="btn btn-danger date-set" type="button"><i class="fa fa-calendar"></i></button>
+                                        </span>
+                                    
+                                    <br />
+                                    <br />
+                                    <a href="#" class="btn" data-type="submit">Submit</a>
+                                    <a href="#" class="btn" data-type="submit">Clear</a>
+                               </center>
+       </div>             
+	</div>
 <!--==============================footer=================================-->
 		<footer>
 			<div class="container_12">
@@ -262,21 +212,11 @@ id="captchaimg" >-->
 					<div class="copy">
 						<div class="st1">
 						<div class="brand">Tour<span class="color1">T</span>axi </div>
-						&copy; 2015	| <a href="#">Privacy Policy</a> </div> Website designed by Abhishek & Arun
+						&copy; 2014	| <a href="#">Privacy Policy</a> </div> Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
 					</div>
 				</div>
 				<div class="clear"></div>
 			</div>
 		</footer>
-		<script>
-			$(function (){
-				$('#bookingForm').bookingForm({
-					ownerEmail: '#'
-				});
-			})
-			$(function() {
-				$('#bookingForm input, #bookingForm textarea').placeholder();
-			});
-		</script>
 	</body>
 </html>

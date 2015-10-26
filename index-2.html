@@ -23,6 +23,8 @@
 				$('.gallery a.gal').touchTouch();
 			});
 		</script>
+		<script src="booking/js/booking.js"></script>
+		<link rel="stylesheet" href="booking/css/booking.css">
 		<!--[if lt IE 8]>
 			<div style=' clear: both; text-align:center; position: relative;'>
 				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -74,27 +76,24 @@
 			</header>
 <!--==============================Content=================================-->
 <div class="container_12">
-			<div class="grid_5">
+			<div class="grid_12">
 						<center><h3>Login</h3></center>
-						<center>
-						<form id="bookingForm">
-							<div class="fl1">
-								<div class="tmInput">
+						<form id="bookingForm"><center>
+								<pre id="some">Username:                      Password:                      Username:                      Username:</pre>
+								<input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
+								<span>Cheap</span>
+								<input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+								<span>Standart</span>
+								<input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+								<span>Lux</span>
+					
+								<input type="Password" data-constraints='@NotEmpty @Required @AlphaSpecial' placeHolder="Password:">
 								<input type="Username" data-constraints='@NotEmpty @Required @AlphaSpecial' placeHolder="Username:">
-								</div>
-							</div>
-							<br>
-							<div class="fl1">
-								<div class="tmInput">
-							<input type="Password" data-constraints='@NotEmpty @Required @AlphaSpecial' placeHolder="Password:" >
-								</div>
-							</div>
-							<a href="#" class="btn" data-type="submit">             Login</a><br>
-							<a href="#">Register</a>
-						</form>
-					</div></center>
-				</div>
-			<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - April 07, 2014!</div>
+								<input type="Username" data-constraints='@NotEmpty @Required @AlphaSpecial' placeHolder="Username:">
+							<a href="#" class="btn" data-type="submit">Login</a><br>
+							</center>
+				</form>
+					<br>
 				<div class="container_12">
 					
 					<div class="grid_12">

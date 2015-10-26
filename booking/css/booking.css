@@ -12,6 +12,13 @@
   position: relative;
 }
 
+.some {
+    -moz-tab-size: 100; /* Code for Firefox */
+    -o-tab-size: 16; /* Code for Opera 10.6-12.1 */
+    tab-size: 16;
+    font: 14px/20px 'Open Sans', sans-serif;
+}
+
 .mr0 {
   margin-right: 0;
 }
@@ -21,6 +28,10 @@
 }
 
 .fl1 {
+  width: 300px;
+}
+
+.fl2{
   width: 300px;
 }
 
@@ -85,7 +96,6 @@
   color: #737272;
   background: #f0f3f5;
   padding: 5px 12px;
-  width: 100%;
   font: 14px/20px 'Open Sans', sans-serif;
   height: 30px;
  
@@ -203,9 +213,8 @@ textarea::-moz-placeholder
   color: #737272;
   background: #f0f3f5;
   font: 14px/20px 'Open Sans', sans-serif;
-  width: 95px;
+  width: 300px;
   height: 30px;
-  float: right;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
