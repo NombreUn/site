@@ -4,9 +4,12 @@
 		<title>Post Truck</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-
+		<meta name = "format-detection" content = "telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="stylesheet" href="booking/css/booking.css">
@@ -152,78 +155,95 @@
 	<div class="content">
 				<div class="container_12" >
 					<div class="grid_6 prefix_1">
-						<center><h3>Cargo Details</h3></center>
+						<center><h3>Shipment Details</h3></center>
 						<form id="bookingForm">
-						<div class="fl1 fl2">
-								<b><strong><em>Cargo Type</em></strong></b>
-								<select name="cgtype" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<!---<option>Truck</option>--->
-									<option>Truck</option>
-									<option>Tempo</option>
-									<option>Lorry</option>
-								</select>
-								<div class="clear height1"></div>
-							</div>
-							<div class="clear"></div>
-							<b><strong>Cargo Description</strong></b>
+						<div class="grid_12 prefix_1">
+							<figure>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>
+							</figure>
+						</div>
+							<b><strong>Pick Up Point</strong></b>
 							<div class="tmInput">
-								<input name="Desc" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+								<input name="put" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 							<div class="clear"></div>
-							<div class="fl1 fl2">
-								<b><strong><em>Transport Type</em></strong></b>
-								<select name="transtype" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<!--<option>8 wheels</option>--->
-									<option>8 wheels</option>
-									<option>6 wheels</option>
-									<option>4 wheels</option>
-								</select>
-								<div class="clear height1"></div>
-							</div>
-							<div class="clear"></div>
-							<div class="fl1 fl2">
-								<b><strong><em>Container Type</em></strong></b>
-								<select name="conttype" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<!---<option>Full Truck Load</option>-->
-									<option>Full Truck Load</option>
-									<option>Less Than Truck Load</option>
-								</select>
-								<div class="clear height1"></div>
-							</div>
-							<div class="clear"></div>
-							<b><strong>Weight</strong></b>
+							<b><strong>Time</strong></b>
 							<div class="tmInput">
-								<input name="wt" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
+								<input name="Time" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 							<div class="clear"></div>
-							<b><strong>Quantity</strong></b>
+							<b><strong>Date</strong></b>
+							<label class="tmDatepicker">
+								<input type="text" name="Date"	placeHolder='20/10/2014' data-constraints="@NotEmpty @Required @Date">
+							</label>
+							<div class="clear"></div>
+							<b><strong>City</strong></b>
 							<div class="tmInput">
-								<input name="quant" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
+								<input name="city" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 							<div class="clear"></div>
-							<b><strong>Length</strong></b>
+							<b><strong>Country</strong></b>
 							<div class="tmInput">
-								<input name="length" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
+								<input name="quant" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 							<div class="clear"></div>
-							<b><strong>Width</strong></b>
+							<b><strong>Latitude</strong></b>
 							<div class="tmInput">
-								<input name="width" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
+								<input name="lati" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 							<div class="clear"></div>
-							<b><strong>Height</strong></b>
+							<b><strong>Longitude</strong></b>
 							<div class="tmInput">
-								<input name="height" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
+								<input name="longi" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
 							</div>
-							<a href="#" class="btn" data-type="submit">Back</a>
-							<a href="delivery.html" class="btn" data-type="submit">Next</a>							
+							<div class="grid_12 prefix_1">
+							<figure>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>
+							</figure>
+						</div>
+							<b><strong>Drop Point</strong></b>
+							<div class="tmInput">
+								<input name="put" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="clear"></div>
+							<b><strong>State</strong></b>
+							<div class="tmInput">
+								<input name="state" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="clear"></div>
+							<b><strong>City</strong></b>
+							<div class="tmInput">
+								<input name="city" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="clear"></div>
+							<b><strong>Country</strong></b>
+							<div class="tmInput">
+								<input name="quant" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="clear"></div>
+							<b><strong>Delivery Time</strong></b>
+							<div class="tmInput">
+								<input name="Time" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="clear"></div>
+							<b><strong>Delivery Date</strong></b>
+							<label class="tmDatepicker">
+								<input type="text" name="Date"	placeHolder='20/10/2014' data-constraints="@NotEmpty @Required @Date">
+							</label>
+							<div class="clear"></div>
+							<b><strong>Estimated Distance</strong></b>
+							<div class="tmInput">
+								<input name="Time" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="clear"></div>
+							<b><strong>Travel Time</strong></b>
+							<div class="tmInput">
+								<input name="Time" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<a href="index-5.html" class="btn" data-type="submit">Back</a>
+							<a href="shipment.html" class="btn" data-type="submit">Next</a>							
 							</form>
 					</div>
-					<div class="grid_6 prefix_1">
-						<a href="index2.html" class="type"><img src="images/slides.jpg" alt=""><span class="type_caption">Economy</span></a>
-						<a href="index2.html" class="type"><img src="images/rejected.jpg" alt=""><span class="type_caption">Standard</span></a>
-					</div>
-					<div class="clear"></div>
 				</div>
 				</div>
 				

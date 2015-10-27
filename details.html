@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Post Truck</title>
+		<title>My Profile</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -75,7 +75,7 @@
 							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 								<ul class="sf-menu">
 									<li><a href="index.html">Home</a></li>
-									<li class="current"><a href="index-5.html">Post Truck</a></li>
+									<li><a href="index-5.html">Post Truck</a></li>
 									<li><a href="index-2.html">Search Truck</a></li>
 									<li><a href="index-3.html">Post Cargo</a></li>
 									<li><a href="index-4.html">Search Cargo</a></li> 
@@ -152,76 +152,63 @@
 	<div class="content">
 				<div class="container_12" >
 					<div class="grid_6 prefix_1">
-						<center><h3>Cargo Details</h3></center>
+						<center><h3>Profile</h3></center>
 						<form id="bookingForm">
-						<div class="fl1 fl2">
-								<b><strong><em>Cargo Type</em></strong></b>
-								<select name="cgtype" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<!---<option>Truck</option>--->
-									<option>Truck</option>
-									<option>Tempo</option>
-									<option>Lorry</option>
-								</select>
-								<div class="clear height1"></div>
+						
+							<div class="fl1">
+								<div class="tmInput">
+								<div class="clear"></div>
+									<strong>First Name: </strong><input  name="Fname" placeHolder="David" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+								</div>
+								<div class="tmInput">
+									<strong>Gender:</strong> <input  name="gender" placeHolder="Male" type="text" data-constraints="@NotEmpty @Required ">
+								</div>
+							</div>
+							<div class="fl1">
+								<div class="tmInput">
+									<strong>Last Name:</strong><input  name="Lname" placeHolder="Guetta" type="text" data-constraints="@NotEmpty @Required ">
+								</div>
+								<div class="tmInput mr0">
+									<strong>Email:</strong><input  name="Email" placeHolder="guedav@rediff.com" type="text" data-constraints="@NotEmpty @Required @Email">
+								</div>
 							</div>
 							<div class="clear"></div>
-							<b><strong>Cargo Description</strong></b>
+							<b><strong>Contact No:</strong></b>
 							<div class="tmInput">
-								<input name="Desc" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+								<input name="mobile"  placeHolder=" +8125-656-6596" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 							<div class="clear"></div>
-							<div class="fl1 fl2">
-								<b><strong><em>Transport Type</em></strong></b>
-								<select name="transtype" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<!--<option>8 wheels</option>--->
-									<option>8 wheels</option>
-									<option>6 wheels</option>
-									<option>4 wheels</option>
-								</select>
-								<div class="clear height1"></div>
-							</div>
-							<div class="clear"></div>
-							<div class="fl1 fl2">
-								<b><strong><em>Container Type</em></strong></b>
-								<select name="conttype" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-									<!---<option>Full Truck Load</option>-->
-									<option>Full Truck Load</option>
-									<option>Less Than Truck Load</option>
-								</select>
-								<div class="clear height1"></div>
-							</div>
-							<div class="clear"></div>
-							<b><strong>Weight</strong></b>
+							<b><strong>Address:</strong></b>
 							<div class="tmInput">
-								<input name="wt" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
+								<input name="bldng"  placeHolder=" 32B" type="text" data-constraints="@NotEmpty @Required">
+								<input name="street"  placeHolder=" Maria Lane" type="text" data-constraints="@NotEmpty @Required">
+								<input name="province"  placeHolder=" LA" type="text" data-constraints="@NotEmpty @Required">
+								<input name="zip"  placeHolder=" 45523" type="text" data-constraints="@NotEmpty @Required">
+								<input name="country"  placeHolder=" USA" type="text" data-constraints="@NotEmpty @Required">
+								<input name="Time"  placeHolder=" 20 Oct 2015" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 							<div class="clear"></div>
-							<b><strong>Quantity</strong></b>
+							<b><strong>Company:</strong></b>
 							<div class="tmInput">
-								<input name="quant" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
+								<input name="cmpname"  placeHolder=" Havana Packers" type="text" data-constraints="@NotEmpty @Required">
+								<input name="cmpreg"  placeHolder=" 4845236" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 							<div class="clear"></div>
-							<b><strong>Length</strong></b>
+							<b><strong>Company Address:</strong></b>
 							<div class="tmInput">
-								<input name="length" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
+								<input name="cmpbldng"  placeHolder=" 12C" type="text" data-constraints="@NotEmpty @Required">
+								<input name="cmpstreet"  placeHolder=" Parkers Avenue" type="text" data-constraints="@NotEmpty @Required">
+								<input name="cmpprovince"  placeHolder=" LA" type="text" data-constraints="@NotEmpty @Required">								
+								<input name="cmpzip"  placeHolder=" 45523" type="text" data-constraints="@NotEmpty @Required">
+								<input name="cmpcountry"  placeHolder=" USA" type="text" data-constraints="@NotEmpty @Required">
+								<input name="cmpsite"  placeHolder=" havanapackers.com" type="text" data-constraints="@NotEmpty @Required @url">
 							</div>
 							<div class="clear"></div>
-							<b><strong>Width</strong></b>
-							<div class="tmInput">
-								<input name="width" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
-							</div>
-							<div class="clear"></div>
-							<b><strong>Height</strong></b>
-							<div class="tmInput">
-								<input name="height" placeHolder="" type="numeric" data-constraints="@NotEmpty @Required">
-							</div>
-							<a href="#" class="btn" data-type="submit">Back</a>
-							<a href="delivery.html" class="btn" data-type="submit">Next</a>							
-							</form>
-					</div>
-					<div class="grid_6 prefix_1">
+							<a href="#" class="btn" data-type="submit">Update</a>
+						</form>
+						</div>
+					 <div class="grid_6 prefix_1">
 						<a href="index2.html" class="type"><img src="images/slides.jpg" alt=""><span class="type_caption">Economy</span></a>
-						<a href="index2.html" class="type"><img src="images/rejected.jpg" alt=""><span class="type_caption">Standard</span></a>
 					</div>
 					<div class="clear"></div>
 				</div>
